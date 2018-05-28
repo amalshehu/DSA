@@ -22,3 +22,17 @@ function factorial(n) {
 
 // Date difference
 // Go to: https://github.com/amalshehu/date-difference/blob/master/date-difference.js
+
+// Print n numbers
+function count(n) {
+  n > 0 ? count(n - 1) : null
+  console.log(n)
+}
+
+// GCD
+function gcd(a, b) {
+  if (a == 0) return b
+  return gcd(b % a, a)
+}
+
+console.log(gcd(10, 15))
